@@ -89,9 +89,6 @@ class EnhancedSwitch extends React.Component {
     // increase clickable area by given % (negative number to decrease)
     increaseArea: PropTypes.string,
 
-    // true to set 'pointer' CSS cursor over enabled inputs and 'default' over disabled
-    cursor: PropTypes.bool,
-
     // set true to inherit original input's class name
     inheritClass: PropTypes.bool,
 
@@ -143,9 +140,6 @@ class EnhancedSwitch extends React.Component {
 
     // increase clickable area by given % (negative number to decrease)
     increaseArea: '',
-
-    // true to set 'pointer' CSS cursor over enabled inputs and 'default' over disabled
-    cursor: false,
 
     // set true to inherit original input's class name
     inheritClass: false,
@@ -423,8 +417,8 @@ class EnhancedSwitch extends React.Component {
     helper = (
       <ins
         className={_iCheckHelper}
-        style={ layer}
-        onClick={ this.handleHelperClick.bind(this)}
+        style={layer}
+        onClick={this.handleHelperClick.bind(this)}
       />
     );
 
@@ -433,14 +427,14 @@ class EnhancedSwitch extends React.Component {
         {...other}
 
         ref="checkbox"
-        type={ props.inputType}
-        style={ hide}
+        type={props.inputType}
+        style={hide}
         name={name}
         value={value}
-        defaultChecked={ props.defaultChecked}
-        onChange={ this.handleChange.bind(this)}
-        onBlur={ this.handleBlur.bind(this)}
-        onFocus={ this.handleFocus.bind(this)}
+        defaultChecked={props.defaultChecked}
+        onChange={this.handleChange.bind(this)}
+        onBlur={this.handleBlur.bind(this)}
+        onFocus={this.handleFocus.bind(this)}
       />
     );
 
@@ -462,7 +456,7 @@ class EnhancedSwitch extends React.Component {
       return inputContainer;
     }
     if (!React.isValidElement(labelElement)) {
-      labelElement = <span dangerouslySetInnerHTML={{ __html: labelElement }}/>;
+      labelElement = <span dangerouslySetInnerHTML={{ __html: labelElement }} />;
     }
 
     // Label events
