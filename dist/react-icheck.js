@@ -55,25 +55,25 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	var _interopRequireDefault = __webpack_require__(1)['default'];
-	
+
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
-	
+
 	var _Checkbox = __webpack_require__(2);
-	
+
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
-	
+
 	var _Radio = __webpack_require__(43);
-	
+
 	var _Radio2 = _interopRequireDefault(_Radio);
-	
+
 	var _RadioGroup = __webpack_require__(44);
-	
+
 	var _RadioGroup2 = _interopRequireDefault(_RadioGroup);
-	
+
 	exports['default'] = {
 	  Checkbox: _Checkbox2['default'],
 	  Radio: _Radio2['default'],
@@ -86,13 +86,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	exports["default"] = function (obj) {
 	  return obj && obj.__esModule ? obj : {
 	    "default": obj
 	  };
 	};
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -100,41 +100,41 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	var _get = __webpack_require__(3)['default'];
-	
+
 	var _inherits = __webpack_require__(19)['default'];
-	
+
 	var _createClass = __webpack_require__(28)['default'];
-	
+
 	var _classCallCheck = __webpack_require__(31)['default'];
-	
+
 	var _extends = __webpack_require__(32)['default'];
-	
+
 	var _interopRequireDefault = __webpack_require__(1)['default'];
-	
+
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
-	
+
 	var _react = __webpack_require__(38);
-	
+
 	var _react2 = _interopRequireDefault(_react);
-	
+
 	var _EnhancedSwitch = __webpack_require__(39);
-	
+
 	var _EnhancedSwitch2 = _interopRequireDefault(_EnhancedSwitch);
-	
+
 	var Checkbox = (function (_React$Component) {
 	  _inherits(Checkbox, _React$Component);
-	
+
 	  function Checkbox(props) {
 	    _classCallCheck(this, Checkbox);
-	
+
 	    _get(Object.getPrototypeOf(Checkbox.prototype), 'constructor', this).call(this, props);
 	    this.state = {};
 	  }
-	
+
 	  _createClass(Checkbox, [{
 	    key: 'getValue',
 	    value: function getValue() {
@@ -156,10 +156,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return _react2['default'].createElement(_EnhancedSwitch2['default'], _extends({ ref: 'enhancedSwitch' }, this.props, { inputType: 'checkbox' }));
 	    }
 	  }]);
-	
+
 	  return Checkbox;
 	})(_react2['default'].Component);
-	
+
 	exports['default'] = Checkbox;
 	module.exports = exports['default'];
 
@@ -168,24 +168,24 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	
+
 	var _Object$getOwnPropertyDescriptor = __webpack_require__(4)["default"];
-	
+
 	exports["default"] = function get(_x, _x2, _x3) {
 	  var _again = true;
-	
+
 	  _function: while (_again) {
 	    var object = _x,
 	        property = _x2,
 	        receiver = _x3;
 	    _again = false;
 	    if (object === null) object = Function.prototype;
-	
+
 	    var desc = _Object$getOwnPropertyDescriptor(object, property);
-	
+
 	    if (desc === undefined) {
 	      var parent = Object.getPrototypeOf(object);
-	
+
 	      if (parent === null) {
 	        return undefined;
 	      } else {
@@ -200,16 +200,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return desc.value;
 	    } else {
 	      var getter = desc.get;
-	
+
 	      if (getter === undefined) {
 	        return undefined;
 	      }
-	
+
 	      return getter.call(receiver);
 	    }
 	  }
 	};
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -252,7 +252,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
 	var toIObject = __webpack_require__(8);
-	
+
 	__webpack_require__(12)('getOwnPropertyDescriptor', function($getOwnPropertyDescriptor){
 	  return function getOwnPropertyDescriptor(it, key){
 	    return $getOwnPropertyDescriptor(toIObject(it), key);
@@ -285,7 +285,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
-	
+
 	module.exports = function(it){
 	  return toString.call(it).slice(8, -1);
 	};
@@ -323,7 +323,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  , core      = __webpack_require__(15)
 	  , ctx       = __webpack_require__(16)
 	  , PROTOTYPE = 'prototype';
-	
+
 	var $export = function(type, name, source){
 	  var IS_FORCED = type & $export.F
 	    , IS_GLOBAL = type & $export.G
@@ -433,16 +433,16 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	
+
 	var _Object$create = __webpack_require__(20)["default"];
-	
+
 	var _Object$setPrototypeOf = __webpack_require__(22)["default"];
-	
+
 	exports["default"] = function (subClass, superClass) {
 	  if (typeof superClass !== "function" && superClass !== null) {
 	    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
 	  }
-	
+
 	  subClass.prototype = _Object$create(superClass && superClass.prototype, {
 	    constructor: {
 	      value: subClass,
@@ -453,7 +453,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  });
 	  if (superClass) _Object$setPrototypeOf ? _Object$setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 	};
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -546,9 +546,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	
+
 	var _Object$defineProperty = __webpack_require__(29)["default"];
-	
+
 	exports["default"] = (function () {
 	  function defineProperties(target, props) {
 	    for (var i = 0; i < props.length; i++) {
@@ -556,18 +556,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	      descriptor.enumerable = descriptor.enumerable || false;
 	      descriptor.configurable = true;
 	      if ("value" in descriptor) descriptor.writable = true;
-	
+
 	      _Object$defineProperty(target, descriptor.key, descriptor);
 	    }
 	  }
-	
+
 	  return function (Constructor, protoProps, staticProps) {
 	    if (protoProps) defineProperties(Constructor.prototype, protoProps);
 	    if (staticProps) defineProperties(Constructor, staticProps);
 	    return Constructor;
 	  };
 	})();
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -590,13 +590,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	exports["default"] = function (instance, Constructor) {
 	  if (!(instance instanceof Constructor)) {
 	    throw new TypeError("Cannot call a class as a function");
 	  }
 	};
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -604,23 +604,23 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	
+
 	var _Object$assign = __webpack_require__(33)["default"];
-	
+
 	exports["default"] = _Object$assign || function (target) {
 	  for (var i = 1; i < arguments.length; i++) {
 	    var source = arguments[i];
-	
+
 	    for (var key in source) {
 	      if (Object.prototype.hasOwnProperty.call(source, key)) {
 	        target[key] = source[key];
 	      }
 	    }
 	  }
-	
+
 	  return target;
 	};
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -642,7 +642,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(13);
-	
+
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(36)});
 
 /***/ },
@@ -653,7 +653,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var $        = __webpack_require__(6)
 	  , toObject = __webpack_require__(37)
 	  , IObject  = __webpack_require__(9);
-	
+
 	// should work with symbols and should have deterministic property order (V8 bug)
 	module.exports = __webpack_require__(18)(function(){
 	  var a = Object.assign
@@ -704,197 +704,197 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	var _get = __webpack_require__(3)['default'];
-	
+
 	var _inherits = __webpack_require__(19)['default'];
-	
+
 	var _createClass = __webpack_require__(28)['default'];
-	
+
 	var _classCallCheck = __webpack_require__(31)['default'];
-	
+
 	var _defineProperty = __webpack_require__(40)['default'];
-	
+
 	var _objectWithoutProperties = __webpack_require__(41)['default'];
-	
+
 	var _extends = __webpack_require__(32)['default'];
-	
+
 	var _interopRequireDefault = __webpack_require__(1)['default'];
-	
+
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
-	
+
 	var _react = __webpack_require__(38);
-	
+
 	var _react2 = _interopRequireDefault(_react);
-	
+
 	var _classnames2 = __webpack_require__(42);
-	
+
 	var _classnames3 = _interopRequireDefault(_classnames2);
-	
+
 	var _iCheck = 'iCheck';
 	var _iCheckHelper = _iCheck + '-helper';
-	
+
 	var EnhancedSwitch = (function (_React$Component) {
 	  _inherits(EnhancedSwitch, _React$Component);
-	
+
 	  _createClass(EnhancedSwitch, null, [{
 	    key: 'propTypes',
 	    value: {
 	      inputType: _react2['default'].PropTypes.string.isRequired,
-	
+
 	      checked: _react2['default'].PropTypes.bool,
 	      defaultChecked: _react2['default'].PropTypes.bool,
-	
+
 	      label: _react2['default'].PropTypes.node,
-	
+
 	      disabled: _react2['default'].PropTypes.bool,
-	
+
 	      indeterminate: _react2['default'].PropTypes.bool,
-	
+
 	      onChange: _react2['default'].PropTypes.func,
 	      onBlur: _react2['default'].PropTypes.func,
 	      onFocus: _react2['default'].PropTypes.func,
-	
+
 	      // base class added to customized checkboxes
 	      checkboxClass: _react2['default'].PropTypes.string,
-	
+
 	      // base class added to customized radio buttons
 	      radioClass: _react2['default'].PropTypes.string,
-	
+
 	      // class added on checked state (input.checked = true)
 	      checkedClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, used instead of 'checkedClass' option (input type specific)
 	      checkedCheckboxClass: _react2['default'].PropTypes.string,
 	      checkedRadioClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, added as class name on unchecked state (input.checked = false)
 	      uncheckedClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, used instead of 'uncheckedClass' option (input type specific)
 	      uncheckedCheckboxClass: _react2['default'].PropTypes.string,
 	      uncheckedRadioClass: _react2['default'].PropTypes.string,
-	
+
 	      // class added on disabled state (input.disabled = true)
 	      disabledClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, used instead of 'disabledClass' option (input type specific)
 	      disabledCheckboxClass: _react2['default'].PropTypes.string,
 	      disabledRadioClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, added as class name on enabled state (input.disabled = false)
 	      enabledClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, used instead of 'enabledClass' option (input type specific)
 	      enabledCheckboxClass: _react2['default'].PropTypes.string,
 	      enabledRadioClass: _react2['default'].PropTypes.string,
-	
+
 	      // class added on indeterminate state (input.indeterminate = true)
 	      indeterminateClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, used instead of 'indeterminateClass' option (input type specific)
 	      indeterminateCheckboxClass: _react2['default'].PropTypes.string,
 	      indeterminateRadioClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, added as class name on determinate state (input.indeterminate = false)
 	      determinateClass: _react2['default'].PropTypes.string,
-	
+
 	      // if not empty, used instead of 'determinateClass' option (input type specific)
 	      determinateCheckboxClass: _react2['default'].PropTypes.string,
 	      determinateRadioClass: _react2['default'].PropTypes.string,
-	
+
 	      // class added on hover state (pointer is moved onto input)
 	      hoverClass: _react2['default'].PropTypes.string,
-	
+
 	      // class added on focus state (input has gained focus)
 	      focusClass: _react2['default'].PropTypes.string,
-	
+
 	      // class added on active state (mouse button is pressed on input)
 	      activeClass: _react2['default'].PropTypes.string,
-	
+
 	      // adds hoverClass to customized input on label hover and labelHoverClass to label on input hover
 	      labelHover: _react2['default'].PropTypes.bool,
-	
+
 	      // class added to label if labelHover set to true
 	      labelHoverClass: _react2['default'].PropTypes.string,
-	
+
 	      // increase clickable area by given % (negative number to decrease)
 	      increaseArea: _react2['default'].PropTypes.string,
-	
+
 	      // true to set 'pointer' CSS cursor over enabled inputs and 'default' over disabled
-	      cursor: _react2['default'].PropTypes.bool,
-	
+	      // cursor: _react2['default'].PropTypes.bool,
+
 	      // set true to inherit original input's class name
 	      inheritClass: _react2['default'].PropTypes.bool,
-	
+
 	      // if set to true, input's id is prefixed with 'iCheck-' and attached
 	      inheritID: _react2['default'].PropTypes.bool,
-	
+
 	      // set true to activate ARIA support
 	      aria: _react2['default'].PropTypes.bool,
-	
+
 	      // add HTML code or text inside customized input
 	      insert: _react2['default'].PropTypes.node,
-	
+
 	      children: _react2['default'].PropTypes.node
 	    },
 	    enumerable: true
 	  }, {
 	    key: 'defaultProps',
 	    value: {
-	
+
 	      checkboxClass: 'icheckbox',
-	
+
 	      // base class added to customized radio buttons
 	      radioClass: 'iradio',
-	
+
 	      // class added on checked state (input.checked = true)
 	      checkedClass: 'checked',
-	
+
 	      // class added on disabled state (input.disabled = true)
 	      disabledClass: 'disabled',
-	
+
 	      // class added on indeterminate state (input.indeterminate = true)
 	      indeterminateClass: 'indeterminate',
-	
+
 	      // class added on hover state (pointer is moved onto input)
 	      hoverClass: 'hover',
-	
+
 	      // class added on focus state (input has gained focus)
 	      focusClass: 'focus',
-	
+
 	      // class added on active state (mouse button is pressed on input)
 	      activeClass: 'active',
-	
+
 	      // adds hoverClass to customized input on label hover and labelHoverClass to label on input hover
 	      labelHover: true,
-	
+
 	      // class added to label if labelHover set to true
 	      labelHoverClass: 'hover',
-	
+
 	      // increase clickable area by given % (negative number to decrease)
 	      increaseArea: '',
-	
+
 	      // true to set 'pointer' CSS cursor over enabled inputs and 'default' over disabled
-	      cursor: false,
-	
+	      // cursor: false,
+
 	      // set true to inherit original input's class name
 	      inheritClass: false,
-	
+
 	      // if set to true, input's id is prefixed with 'iCheck-' and attached
 	      inheritID: false,
-	
+
 	      // set true to activate ARIA support
 	      aria: false
 	    },
 	    enumerable: true
 	  }]);
-	
+
 	  function EnhancedSwitch(props) {
 	    _classCallCheck(this, EnhancedSwitch);
-	
+
 	    _get(Object.getPrototypeOf(EnhancedSwitch.prototype), 'constructor', this).call(this, props);
 	    var checked = false;
 	    if ('checked' in props) {
@@ -911,7 +911,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      active: false
 	    };
 	  }
-	
+
 	  _createClass(EnhancedSwitch, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
@@ -966,11 +966,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'adjustStyle',
 	    value: function adjustStyle() {
 	      var inputContainer = this.refs.inputContainer;
-	
+
 	      var _window$getComputedStyle = window.getComputedStyle(inputContainer);
-	
+
 	      var position = _window$getComputedStyle.position;
-	
+
 	      if (position === 'static') {
 	        inputContainer.style.position = 'relative';
 	      }
@@ -989,7 +989,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          checked: checked
 	        });
 	      }
-	
+
 	      if (this.props.onChange) {
 	        this.props.onChange(e, checked);
 	      }
@@ -1000,7 +1000,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.setState({
 	        focused: false
 	      });
-	
+
 	      if (this.props.onBlur) {
 	        this.props.onBlur(e);
 	      }
@@ -1011,7 +1011,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.setState({
 	        focused: true
 	      });
-	
+
 	      if (this.props.onFocus) {
 	        this.props.onFocus(e);
 	      }
@@ -1022,23 +1022,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.props.label) {
 	        return;
 	      }
-	
+
 	      if (this.props.disabled) {
 	        return;
 	      }
-	
+
 	      var newChecked = !this.refs.checkbox.checked;
-	
+
 	      if (!('checked' in this.props)) {
 	        this.refs.checkbox.checked = newChecked;
 	        this.setState({
 	          checked: newChecked
 	        });
 	      }
-	
+
 	      event.preventDefault();
 	      event.stopPropagation();
-	
+
 	      if (this.props.onChange) {
 	        // make sure <ins /> element is not target
 	        event.target = this.refs.checkbox;
@@ -1049,7 +1049,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var _classnames;
-	
+
 	      var props = this.props;
 	      var disabled = props.disabled;
 	      var type = props.type;
@@ -1064,21 +1064,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var onTouchStart = props.onTouchStart;
 	      var onTouchEnd = props.onTouchEnd;
 	      var className = props.className;
-	
+
 	      var other = _objectWithoutProperties(props, ['type', 'name', 'value', 'label', 'onBlur', 'onFocus', 'onMouseUp', 'onMouseDown', 'onMouseLeave', 'onTouchStart', 'onTouchEnd', 'className']);
-	
+
 	      var checked = this.state.checked;
-	
+
 	      // Setup clickable area
 	      var area = ('' + props.increaseArea).replace('%', '') | 0;
-	
+
 	      // Clickable area limit
 	      if (area < -50) {
 	        area = -50;
 	      }
-	
+
 	      var id = props.id;
-	
+
 	      // Layer styles
 	      var offset = -area + '%';
 	      var size = 100 + area * 2 + '%';
@@ -1096,7 +1096,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        opacity: 0,
 	        cursor: disabled ? 'default' : 'pointer'
 	      };
-	
+
 	      // Choose how to hide input
 	      var hide = undefined;
 	      if (this._mobile) {
@@ -1112,13 +1112,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	          opacity: 0
 	        };
 	      }
-	
+
 	      // Check ARIA option
 	      var aria = !!props.aria;
-	
+
 	      // TODO: Set ARIA placeholder
 	      // let ariaID = _iCheck + '-' + Math.random().toString(36).substr(2, 6);
-	
+
 	      var helper = undefined;
 	      var indeterminateClass = props.indeterminateClass;
 	      if (props.inputType === 'checkbox' && typeof props.indeterminateCheckboxClass !== 'undefined') {
@@ -1126,34 +1126,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	      } else if (props.inputType === 'radio' && typeof props.indeterminateRadioClass !== 'undefined') {
 	        indeterminateClass = props.indeterminateRadioClass;
 	      }
-	
+
 	      var wrapProps = {
 	        className: (0, _classnames3['default'])((_classnames = {}, _defineProperty(_classnames, props.checkboxClass, props.inputType === 'checkbox'), _defineProperty(_classnames, props.radioClass, props.inputType === 'radio'), _defineProperty(_classnames, indeterminateClass, props.indeterminate), _defineProperty(_classnames, props.checkedClass, checked), _defineProperty(_classnames, props.disabledClass, disabled), _defineProperty(_classnames, props.hoverClass, this.state.hovered), _defineProperty(_classnames, props.focusClass, this.state.focused), _defineProperty(_classnames, props.activeClass, this.state.active), _classnames))
 	      };
-	
+
 	      if (aria) {
 	        wrapProps.role = props.inputType;
 	        // Set ARIA "labelledby"
 	        wrapProps['aria-labelledby'] = '';
 	      }
-	
+
 	      if (props.inheritClass) {
 	        wrapProps.className = (0, _classnames3['default'])(wrapProps.className, props.className);
 	      }
-	
+
 	      if (props.inheritID && id) {
 	        wrapProps.id = _iCheck + '-' + id;
 	      }
-	
+
 	      var helperProps = {
 	        className: _iCheckHelper,
 	        style: layer,
 	        onClick: this.handleHelperClick.bind(this)
 	      };
-	
+
 	      // Layer addition
 	      helper = _react2['default'].createElement('ins', helperProps);
-	
+
 	      var inputProps = {
 	        ref: 'checkbox',
 	        type: props.inputType,
@@ -1165,14 +1165,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        onBlur: this.handleBlur.bind(this),
 	        onFocus: this.handleFocus.bind(this)
 	      };
-	
+
 	      var inputElement = _react2['default'].createElement('input', inputProps);
-	
+
 	      var insertElement = props.insert || undefined;
 	      if (insertElement && !_react2['default'].isValidElement(insertElement)) {
 	        insertElement = _react2['default'].createElement('div', { dangerouslySetInnerHTML: { __html: insertElement } });
 	      }
-	
+
 	      var inputContainer = _react2['default'].createElement(
 	        'div',
 	        _extends({ ref: 'inputContainer' }, wrapProps),
@@ -1180,7 +1180,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        insertElement,
 	        helper
 	      );
-	
+
 	      var labelElement = props.label;
 	      if (!labelElement) {
 	        return inputContainer;
@@ -1188,16 +1188,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (!_react2['default'].isValidElement(labelElement)) {
 	        labelElement = _react2['default'].createElement('span', { dangerouslySetInnerHTML: { __html: labelElement } });
 	      }
-	
+
 	      // Label events
 	      function handleLabelEvent(event) {
 	        // Do nothing if input is disabled
 	        if (disabled) {
 	          return;
 	        }
-	
+
 	        var etype = event.type;
-	
+
 	        // Click
 	        if (etype === 'click') {
 	          // FIXME
@@ -1211,13 +1211,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	              hovered: !/ut|nd/.test(etype)
 	            });
 	          }
-	
+
 	        if (this._mobile) {
 	          event.stopPropagation();
 	        }
 	        // return false;
 	      }
-	
+
 	      var labelProps = {
 	        // onClick: handleLabelEvent.bind(this),
 	        onMouseOver: handleLabelEvent.bind(this),
@@ -1225,7 +1225,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        onTouchStart: handleLabelEvent.bind(this),
 	        onTouchEnd: handleLabelEvent.bind(this)
 	      };
-	
+
 	      return _react2['default'].createElement(
 	        'label',
 	        labelProps,
@@ -1234,10 +1234,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      );
 	    }
 	  }]);
-	
+
 	  return EnhancedSwitch;
 	})(_react2['default'].Component);
-	
+
 	exports['default'] = EnhancedSwitch;
 	module.exports = exports['default'];
 
@@ -1246,9 +1246,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	
+
 	var _Object$defineProperty = __webpack_require__(29)["default"];
-	
+
 	exports["default"] = function (obj, key, value) {
 	  if (key in obj) {
 	    _Object$defineProperty(obj, key, {
@@ -1260,10 +1260,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  } else {
 	    obj[key] = value;
 	  }
-	
+
 	  return obj;
 	};
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -1271,19 +1271,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	"use strict";
-	
+
 	exports["default"] = function (obj, keys) {
 	  var target = {};
-	
+
 	  for (var i in obj) {
 	    if (keys.indexOf(i) >= 0) continue;
 	    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
 	    target[i] = obj[i];
 	  }
-	
+
 	  return target;
 	};
-	
+
 	exports.__esModule = true;
 
 /***/ },
@@ -1297,40 +1297,40 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	var _get = __webpack_require__(3)['default'];
-	
+
 	var _inherits = __webpack_require__(19)['default'];
-	
+
 	var _createClass = __webpack_require__(28)['default'];
-	
+
 	var _classCallCheck = __webpack_require__(31)['default'];
-	
+
 	var _extends = __webpack_require__(32)['default'];
-	
+
 	var _interopRequireDefault = __webpack_require__(1)['default'];
-	
+
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
-	
+
 	var _react = __webpack_require__(38);
-	
+
 	var _react2 = _interopRequireDefault(_react);
-	
+
 	var _EnhancedSwitch = __webpack_require__(39);
-	
+
 	var _EnhancedSwitch2 = _interopRequireDefault(_EnhancedSwitch);
-	
+
 	var Radio = (function (_React$Component) {
 	  _inherits(Radio, _React$Component);
-	
+
 	  function Radio() {
 	    _classCallCheck(this, Radio);
-	
+
 	    _get(Object.getPrototypeOf(Radio.prototype), 'constructor', this).apply(this, arguments);
 	  }
-	
+
 	  _createClass(Radio, [{
 	    key: 'getValue',
 	    value: function getValue() {
@@ -1353,15 +1353,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ref: 'enhancedSwitch',
 	        inputType: 'radio'
 	      };
-	
+
 	      // labelClassName
 	      return _react2['default'].createElement(_EnhancedSwitch2['default'], _extends({}, this.props, enhancedSwitchProps));
 	    }
 	  }]);
-	
+
 	  return Radio;
 	})(_react2['default'].Component);
-	
+
 	exports['default'] = Radio;
 	module.exports = exports['default'];
 
@@ -1370,36 +1370,36 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
-	
+
 	var _get = __webpack_require__(3)['default'];
-	
+
 	var _inherits = __webpack_require__(19)['default'];
-	
+
 	var _createClass = __webpack_require__(28)['default'];
-	
+
 	var _classCallCheck = __webpack_require__(31)['default'];
-	
+
 	var _objectWithoutProperties = __webpack_require__(41)['default'];
-	
+
 	var _extends = __webpack_require__(32)['default'];
-	
+
 	var _interopRequireDefault = __webpack_require__(1)['default'];
-	
+
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
-	
+
 	var _react = __webpack_require__(38);
-	
+
 	var _react2 = _interopRequireDefault(_react);
-	
+
 	var _Radio = __webpack_require__(43);
-	
+
 	var _Radio2 = _interopRequireDefault(_Radio);
-	
+
 	var RadioGroup = (function (_React$Component) {
 	  _inherits(RadioGroup, _React$Component);
-	
+
 	  _createClass(RadioGroup, null, [{
 	    key: 'propTypes',
 	    value: {
@@ -1407,7 +1407,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	       * The name that will be applied to all radio buttons inside it.
 	       */
 	      name: _react2['default'].PropTypes.string.isRequired,
-	
+
 	      /**
 	       * Sets the default radio button to be the one whose
 	       * value matches defaultValue (case-sensitive).
@@ -1415,24 +1415,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	       * the defaultChecked or checked property stated.
 	       */
 	      defaultValue: _react2['default'].PropTypes.string,
-	
+
 	      /**
 	       * The value of the currently selected radio button.
 	       */
 	      value: _react2['default'].PropTypes.string,
-	
+
 	      /**
 	       * Callback function that is fired when a radio button has
 	       * been clicked. Returns the event and the value of the radio
 	       * button that has been selected.
 	       */
 	      onChange: _react2['default'].PropTypes.func,
-	
+
 	      /**
 	       * Should be used to pass `Radio` components.
 	       */
 	      children: _react2['default'].PropTypes.node,
-	
+
 	      /**
 	       * The css class name of the root element.
 	       */
@@ -1440,28 +1440,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    enumerable: true
 	  }]);
-	
+
 	  function RadioGroup(props) {
 	    _classCallCheck(this, RadioGroup);
-	
+
 	    _get(Object.getPrototypeOf(RadioGroup.prototype), 'constructor', this).call(this, props);
 	    this.state = {
 	      numberCheckedRadioButtons: 0,
 	      value: this.props.value || this.props.defaultValue || ''
 	    };
 	  }
-	
+
 	  _createClass(RadioGroup, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      var _this = this;
-	
+
 	      var cnt = 0;
-	
+
 	      _react2['default'].Children.forEach(this.props.children, function (option) {
 	        if (_this.hasCheckAttribute(option)) cnt++;
 	      }, this);
-	
+
 	      this.setState({ numberCheckedRadioButtons: cnt });
 	    }
 	  }, {
@@ -1509,9 +1509,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'handleChange',
 	    value: function handleChange(e /* TODO , newValue */) {
 	      var newValue = e.target.value;
-	
+
 	      this.updateRadioButtons(newValue);
-	
+
 	      // Successful update
 	      if (this.state.numberCheckedRadioButtons === 0) {
 	        if (this.props.onChange) {
@@ -1523,16 +1523,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var _this2 = this;
-	
+
 	      var options = _react2['default'].Children.map(this.props.children, function (option) {
 	        var _option$props = option.props;
 	        var name = _option$props.name;
 	        var value = _option$props.value;
 	        var label = _option$props.label;
 	        var onChange = _option$props.onChange;
-	
+
 	        var other = _objectWithoutProperties(_option$props, ['name', 'value', 'label', 'onChange']);
-	
+
 	        return _react2['default'].createElement(_Radio2['default'], _extends({}, other, {
 	          ref: option.props.value,
 	          name: _this2.props.name,
@@ -1543,7 +1543,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          checked: option.props.value === _this2.state.value
 	        }));
 	      }, this);
-	
+
 	      return _react2['default'].createElement(
 	        'div',
 	        { className: this.props.className },
@@ -1551,10 +1551,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      );
 	    }
 	  }]);
-	
+
 	  return RadioGroup;
 	})(_react2['default'].Component);
-	
+
 	exports['default'] = RadioGroup;
 	module.exports = exports['default'];
 
